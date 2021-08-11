@@ -1,3 +1,3 @@
-<app-header ></app-header>
-<app-menu></app-menu>
+<app-header [subTitle]="subTitle"></app-header>
+<app-menu (subTitle)="receiveSubTitle($event)"></app-menu>
 <app-footer [data_footer]="footer" ></app-footer>

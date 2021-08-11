@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { SubMenusService } from '../services/sub-menus.service';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -11,6 +10,7 @@ import { SubMenusService } from '../services/sub-menus.service';
 
 export class HeaderComponent implements OnInit {
 
+  @Input() subTitle: string = "";
   
   constructor() {
 

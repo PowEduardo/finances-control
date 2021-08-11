@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { SubMenusService } from '../services/sub-menus.service';
 
 @Component({
@@ -10,6 +10,7 @@ export class MenuComponent implements OnInit {
   subMenus: any;
   isHomeActive: boolean = false;
   isSettingsActive: boolean = false;
+  @Output() subTitle = new EventEmitter();
   
   constructor(private service: SubMenusService) { }
 
@@ -27,6 +28,7 @@ export class MenuComponent implements OnInit {
       console.log("Clicou em Home!");
       this.isSettingsActive = false;
       this.isHomeActive = true;
+      this.subTitle.emit("Home");
       
     } else if(name === "Settings"){
       console.log("Clicou em Settings");
@@ -46,5 +48,7 @@ export class MenuComponent implements OnInit {
     this.isSettingsActive = true;
     this.isHomeActive = false;
   }
+
+  
 
 }
