@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SubMenusService } from './services/sub-menus.service';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
+import { CurrentAccountComponent } from './current-account/current-account.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MenuComponent } from './menu/menu.component';
     FooterComponent,
     SideMenuComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    CurrentAccountComponent
   ],
   imports: [
     BrowserModule,
