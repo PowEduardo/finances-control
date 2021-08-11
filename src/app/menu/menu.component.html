@@ -1,0 +1,10 @@
+<div>
+    <div>
+        <div>
+            <input #Home type="button" value="Home" name="Home" (click)="changeComponent(Home.name)">
+            <input #Settings type="button" value="Settings" name="Settings" (click)="changeComponent(Settings.name)">
+        </div>
+    </div>
+</div>
+
+<app-home *ngIf="isHomeActive"></app-home>

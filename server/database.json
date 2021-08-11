@@ -1,0 +1,13 @@
+{
+  "products": [],
+  "subMenus": [
+    {
+      "name": "Home",
+      "id": 0
+    },
+    {
+      "name": "Settings",
+      "id": 1
+    }
+  ]
+}
