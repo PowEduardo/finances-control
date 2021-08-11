@@ -17,9 +17,8 @@ export class SubMenusService {
   }
 
   listarTodosSubMenus() {
-    
-    console.log(this.http.get(this.apiUrl));
 
+    console.log(this.http.get(this.apiUrl));
     return this.http.get(this.apiUrl);
 
   }

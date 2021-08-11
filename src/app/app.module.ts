@@ -11,6 +11,8 @@ import { SubMenusService } from './services/sub-menus.service';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { CurrentAccountComponent } from './current-account/current-account.component';
+import { PhoneNumberValidatorDirective } from './validators/phone-number-validator.directive';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,14 @@ import { CurrentAccountComponent } from './current-account/current-account.compo
     SideMenuComponent,
     HomeComponent,
     MenuComponent,
-    CurrentAccountComponent
+    CurrentAccountComponent,
+    PhoneNumberValidatorDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [SubMenusService],
   bootstrap: [AppComponent]

@@ -34,6 +34,7 @@ export class MenuComponent implements OnInit {
       console.log("Clicou em Settings");
       this.isSettingsActive = true;
       this.isHomeActive = false;
+      this.subTitle.emit("Settings");
     }
     
 

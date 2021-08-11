@@ -1,3 +1,5 @@
-<app-header [subTitle]="subTitle"></app-header>
-<app-menu (subTitle)="receiveSubTitle($event)"></app-menu>
-<app-footer [data_footer]="footer" ></app-footer>
+<div style="background-color: grey;">
+    <app-header [subTitle]="subTitle" [title]="title"></app-header>
+    <app-menu (subTitle)="receiveSubTitle($event)"></app-menu>
+    <app-footer [data_footer]="footer"></app-footer>
+</div>

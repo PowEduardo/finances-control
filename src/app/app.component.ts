@@ -7,18 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
   
-  title = 'angular-tour-of-heroes';
-  subTitle: any;
+  title:any = "";
+  subTitle: string = "";
   footer = "Aqui Paulo";
 
-  public receiveSubTitle(subTitle: Event) {
+  public receiveSubTitle(subTitle: string) {
     this.subTitle = subTitle;
     console.log(subTitle);
 
   }
 
   ngOnInit(): void {
-    this.subTitle = "Arruda Tour Of Heroes";
+    this.subTitle = "Main";
+    this.title = "Arruda Tour Of Heroes";
   }
 
 }

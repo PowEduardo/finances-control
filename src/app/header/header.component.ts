@@ -11,6 +11,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   @Input() subTitle: string = "";
+  @Input() title: string = "";
   
   constructor() {
 
